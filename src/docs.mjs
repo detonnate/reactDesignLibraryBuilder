@@ -82,10 +82,23 @@ ${variants.map((v) => `<section class="variant" id="${slug(v.name)}"><div><h3>${
   }
 
   const groups = Object.groupBy(components, (c) => c.category)
-  const index = `<header><h1>${esc(repoName)} design library</h1><p class="muted">${components.length} components from ${esc(repoSource)}</p><input type="search" id="q" placeholder="Filter components…"></header>
+  const index = `<header><h1>${esc(repoName)} design library</h1><p class="muted">${components.length} components from ${esc(repoSource)}</p><input type="search" id="q" placeholder="Filter components…"> <a href="CATALOGUE.html">Catalogue (HTML)</a> &middot; <a href="CATALOGUE.md">Catalogue (MD)</a></header>
 <main>${Object.entries(groups).map(([cat, list]) => `<h2>${esc(cat)}</h2><div class="grid">${list.map((c) => `<a class="card" data-name="${esc(c.name.toLowerCase())}" href="components/${esc(c.name)}.html"><div class="thumb"><img src="${esc(c.variants[0].image)}" alt="" loading="lazy"></div><div class="meta"><b>${esc(c.name)}</b><span class="muted">${c.variants.length} variant(s)</span></div></a>`).join('')}</div>`).join('')}</main>
 <script>document.getElementById('q').addEventListener('input',e=>{const v=e.target.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.style.display=c.dataset.name.includes(v)?'':'none')})</script>`
   fs.writeFileSync(path.join(outDir, 'index.html'), page(`${repoName} design library`, index))
+
+  const catalogue = [`# ${repoName} component catalogue`, '', `Source: ${repoSource}  `, `${components.length} components, ${components.reduce((n, c) => n + c.variants.length, 0)} screenshots.`, '',
+    '## Contents', '', ...Object.entries(groups).flatMap(([cat, list]) => [`- **${cat}**: ${list.map((c) => `[${c.name}](#${c.name.toLowerCase()})`).join(', ')}`]), '',
+    ...Object.entries(groups).flatMap(([cat, list]) => [`## ${cat}`, '', ...list.flatMap((c) => [
+      `### ${c.name}`, '', `\`${c.file}\`${c.description ? ` - ${c.description.replace(/\n/g, ' ')}` : ''}`, '',
+      c.props.length ? `Props: ${c.props.map((p) => `\`${p.name}${p.required ? '*' : ''}\``).join(', ')}` : '', '',
+      ...c.variants.flatMap((v) => [`**${v.name}**`, '', `![${c.name} - ${v.name}](${v.image})`, '']),
+      `[Full docs](components/${c.name}.md)`, ''])])].join('\n')
+  fs.writeFileSync(path.join(outDir, 'CATALOGUE.md'), catalogue)
+
+  const catHtml = `<header><a href="index.html">&larr; Gallery</a><h1>${esc(repoName)} component catalogue</h1><p class="muted">${components.length} components &middot; <a href="CATALOGUE.md">Markdown version</a></p></header>
+<main>${Object.entries(groups).map(([cat, list]) => `<h2>${esc(cat)}</h2>${list.map((c) => `<section class="variant" id="${esc(c.name.toLowerCase())}"><div><h3>${esc(c.name)} &middot; <code>${esc(c.file)}</code></h3>${c.description ? `<p>${esc(c.description)}</p>` : ''}${c.props.length ? `<p class="muted">Props: ${c.props.map((p) => `<code>${esc(p.name)}${p.required ? '*' : ''}</code>`).join(' ')}</p>` : ''}</div>${c.variants.map((v) => `<div><b>${esc(v.name)}</b></div><img src="${esc(v.image)}" alt="${esc(c.name)} - ${esc(v.name)}" loading="lazy">`).join('')}<div><a href="components/${esc(c.name)}.html">Full docs</a></div></section>`).join('')}`).join('')}</main>`
+  fs.writeFileSync(path.join(outDir, 'CATALOGUE.html'), page(`${repoName} catalogue`, catHtml))
 
   fs.writeFileSync(
     path.join(outDir, 'manifest.json'),

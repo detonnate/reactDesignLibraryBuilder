@@ -6,7 +6,7 @@
   "bin": { "design-library": "./src/cli.mjs" },
   "scripts": {
     "setup": "playwright install chromium",
-    "build:swiss": "node src/cli.mjs https://github.com/detonnate/reactSwissComponents --out docs-out/swiss --examples examples/swiss.examples.jsx"
+    "build:swiss": "node src/cli.mjs https://github.com/detonnate/reactSwissComponents --examples examples/swiss.examples.jsx"
   },
   "engines": { "node": ">=18" },
   "dependencies": {

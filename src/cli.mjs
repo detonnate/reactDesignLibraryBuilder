@@ -10,7 +10,7 @@ import { writeDocs } from './docs.mjs'
 const { values, positionals } = parseArgs({
   allowPositionals: true,
   options: {
-    out: { type: 'string', default: 'design-library' },
+    out: { type: 'string' },
     work: { type: 'string', default: '.work' },
     dirs: { type: 'string', multiple: true },
     css: { type: 'string', multiple: true },
@@ -25,15 +25,15 @@ const { values, positionals } = parseArgs({
 
 const source = positionals[0]
 if (!source) {
-  console.error('Usage: design-library <github-url|local-path> [--out dir] [--dirs src/components] [--css file] [--examples file.tsx] [--only Name,Name] [--exclude Name]')
+  console.error('Usage: design-library <github-url|local-path> [--out output/<repo>] [--dirs src/components] [--css file] [--examples file.tsx] [--only Name,Name] [--exclude Name]')
   process.exit(1)
 }
 
 const work = path.resolve(values.work)
-const out = path.resolve(values.out)
 
 console.log('1/4 Preparing repository…')
 const { dir, name } = prepareRepo(source, { workDir: work, branch: values.branch, skipInstall: values['skip-install'] })
+const out = path.resolve(values.out ?? path.join('output', name))
 
 console.log('2/4 Scanning components…')
 let components = scan(dir, { dirs: values.dirs, exclude: values.exclude })

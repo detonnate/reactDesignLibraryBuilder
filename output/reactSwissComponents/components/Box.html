@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Box - reactSwissComponents</title><style>
+:root{--bg:#fafafa;--fg:#111;--mut:#666;--line:#e3e3e3;--acc:#d52b1e}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--fg)}
+header{padding:32px 40px;border-bottom:1px solid var(--line);background:#fff}
+h1{margin:0 0 4px;font-size:28px}h2{margin:40px 0 12px;font-size:18px}h3{margin:0 0 8px;font-size:14px;color:var(--mut);font-weight:600}
+main{padding:24px 40px 80px;max-width:1400px;margin:auto}a{color:var(--acc)}
+.muted{color:var(--mut)}input[type=search]{padding:10px 14px;width:100%;max-width:420px;border:1px solid var(--line);font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);text-decoration:none;color:inherit;display:block}
+.card .thumb{height:170px;overflow:hidden;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;justify-content:center;background:#fff}
+.card .thumb img{width:100%;object-fit:cover;object-position:top left}
+.card .meta{padding:12px 14px}.card b{display:block}
+.variant{background:#fff;border:1px solid var(--line);margin-bottom:24px}
+.variant>div{padding:12px 16px}.variant img{max-width:100%;display:block;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+pre{margin:0;padding:12px;background:#111;color:#eee;overflow:auto;font:12px/1.5 ui-monospace,monospace;white-space:pre-wrap;word-break:break-all}
+table{border-collapse:collapse;width:100%;background:#fff}th,td{text-align:left;padding:8px 12px;border:1px solid var(--line);vertical-align:top}
+code{font:12px ui-monospace,monospace;background:#eee;padding:1px 5px}.err{color:#b00020}
+details{margin-top:8px}summary{cursor:pointer;color:var(--mut)}
+</style></head><body><header><a href="../index.html">&larr; reactSwissComponents library</a><h1>Box</h1><div class="muted">layout &middot; <code>src/components/layout.tsx</code></div></header>
+<main><h2>Import</h2><pre>import { Box } from 'src/components/layout'</pre>
+<h2>Variants</h2>
+<section class="variant" id="default"><div><h3>Default</h3></div><img src="../screenshots/Box/00-default.png" alt="Box - Default" loading="lazy">
+<div><pre>&lt;Box /&gt;</pre>
+<details><summary>Rendered HTML</summary><pre>&lt;div data-component=&quot;box&quot;&gt;&lt;/div&gt;</pre></details><p class="muted"><a href="../html/Box/00-default.html">Standalone HTML preview</a></p></div></section>
+<h2>Props</h2><table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>as</code></td><td><code>React.ElementType&lt;any, keyof React.JSX.IntrinsicElements&gt; | undefined</code></td><td><code>'div'</code></td><td></td></tr></tbody></table></main></body></html>

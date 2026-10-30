@@ -1,0 +1,3740 @@
+{
+  "repo": "https://github.com/detonnate/reactSwissComponents",
+  "generatedAt": "2026-10-30T17:00:56.974Z",
+  "components": [
+    {
+      "name": "BarChart",
+      "exportName": "BarChart",
+      "file": "src/components/charts.tsx",
+      "category": "charts",
+      "description": "",
+      "props": [
+        {
+          "name": "series",
+          "type": "Series[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "labels",
+          "type": "string[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "stacked",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Bar chart'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "series": [
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              }
+            ],
+            "labels": [
+              "One",
+              "Two",
+              "Three"
+            ]
+          },
+          "image": "screenshots/BarChart/00-default.png",
+          "error": null
+        },
+        {
+          "name": "stacked",
+          "props": {
+            "series": [
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              }
+            ],
+            "labels": [
+              "One",
+              "Two",
+              "Three"
+            ],
+            "stacked": true
+          },
+          "image": "screenshots/BarChart/01-stacked.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Gauge",
+      "exportName": "Gauge",
+      "file": "src/components/charts.tsx",
+      "category": "charts",
+      "description": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "number",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "max",
+          "type": "number | undefined",
+          "required": false,
+          "default": "100",
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "value": 60,
+            "label": "Sample label"
+          },
+          "image": "screenshots/Gauge/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "LineChart",
+      "exportName": "LineChart",
+      "file": "src/components/charts.tsx",
+      "category": "charts",
+      "description": "",
+      "props": [
+        {
+          "name": "series",
+          "type": "Series[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "labels",
+          "type": "string[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "area",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Line chart'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "series": [
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              }
+            ],
+            "labels": [
+              "One",
+              "Two",
+              "Three"
+            ]
+          },
+          "image": "screenshots/LineChart/00-default.png",
+          "error": null
+        },
+        {
+          "name": "area",
+          "props": {
+            "series": [
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              },
+              {
+                "name": "Sample text",
+                "data": [
+                  3,
+                  3,
+                  3
+                ]
+              }
+            ],
+            "labels": [
+              "One",
+              "Two",
+              "Three"
+            ],
+            "area": true
+          },
+          "image": "screenshots/LineChart/01-area.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "PieChart",
+      "exportName": "PieChart",
+      "file": "src/components/charts.tsx",
+      "category": "charts",
+      "description": "",
+      "props": [
+        {
+          "name": "data",
+          "type": "Slice[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "donut",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Pie chart'",
+          "doc": ""
+        },
+        {
+          "name": "centerLabel",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "data": [
+              {
+                "name": "Sample text",
+                "value": 60
+              },
+              {
+                "name": "Sample text",
+                "value": 60
+              },
+              {
+                "name": "Sample text",
+                "value": 60
+              }
+            ]
+          },
+          "image": "screenshots/PieChart/00-default.png",
+          "error": null
+        },
+        {
+          "name": "donut",
+          "props": {
+            "data": [
+              {
+                "name": "Sample text",
+                "value": 60
+              },
+              {
+                "name": "Sample text",
+                "value": 60
+              },
+              {
+                "name": "Sample text",
+                "value": 60
+              }
+            ],
+            "donut": true
+          },
+          "image": "screenshots/PieChart/01-donut.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "ScatterChart",
+      "exportName": "ScatterChart",
+      "file": "src/components/charts.tsx",
+      "category": "charts",
+      "description": "",
+      "props": [
+        {
+          "name": "series",
+          "type": "ScatterSeries[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Scatter plot'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "series": [
+              {
+                "name": "Sample text",
+                "points": [
+                  {},
+                  {},
+                  {}
+                ]
+              },
+              {
+                "name": "Sample text",
+                "points": [
+                  {},
+                  {},
+                  {}
+                ]
+              },
+              {
+                "name": "Sample text",
+                "points": [
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            ]
+          },
+          "image": "screenshots/ScatterChart/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Sparkline",
+      "exportName": "Sparkline",
+      "file": "src/components/charts.tsx",
+      "category": "charts",
+      "description": "",
+      "props": [
+        {
+          "name": "data",
+          "type": "number[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "color",
+          "type": "string | undefined",
+          "required": false,
+          "default": "CHART_COLORS[0]",
+          "doc": ""
+        },
+        {
+          "name": "width",
+          "type": "number | undefined",
+          "required": false,
+          "default": "120",
+          "doc": ""
+        },
+        {
+          "name": "height",
+          "type": "number | undefined",
+          "required": false,
+          "default": "32",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "data": [
+              3,
+              3,
+              3
+            ]
+          },
+          "image": "screenshots/Sparkline/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Accordion",
+      "exportName": "Accordion",
+      "file": "src/components/containers.tsx",
+      "category": "containers",
+      "description": "",
+      "props": [
+        {
+          "name": "items",
+          "type": "{ id: string; title: string; content: React.ReactNode; }[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "multiple",
+          "type": "boolean | undefined",
+          "required": false,
+          "default": "false",
+          "doc": ""
+        },
+        {
+          "name": "defaultOpen",
+          "type": "string[] | undefined",
+          "required": false,
+          "default": "[]",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "items": [
+              {
+                "id": "sample",
+                "title": "Sample title",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "title": "Sample title",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "title": "Sample title",
+                "content": "Sample content"
+              }
+            ]
+          },
+          "image": "screenshots/Accordion/00-default.png",
+          "error": null
+        },
+        {
+          "name": "multiple",
+          "props": {
+            "items": [
+              {
+                "id": "sample",
+                "title": "Sample title",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "title": "Sample title",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "title": "Sample title",
+                "content": "Sample content"
+              }
+            ],
+            "multiple": true
+          },
+          "image": "screenshots/Accordion/01-multiple.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "exportName": "Carousel",
+      "file": "src/components/containers.tsx",
+      "category": "containers",
+      "description": "",
+      "props": [
+        {
+          "name": "slides",
+          "type": "React.ReactNode[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "autoPlayMs",
+          "type": "number | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Carousel'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "slides": [
+              "Sample content",
+              "Sample content",
+              "Sample content"
+            ]
+          },
+          "image": "screenshots/Carousel/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Drawer",
+      "exportName": "Drawer",
+      "file": "src/components/containers.tsx",
+      "category": "containers",
+      "description": "",
+      "props": [
+        {
+          "name": "isOpen",
+          "type": "boolean",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "onClose",
+          "type": "() => void",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "side",
+          "type": "\"left\" | \"right\" | undefined",
+          "required": false,
+          "default": "'right'",
+          "doc": ""
+        },
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "isOpen": false,
+            "onClose": "__fn__",
+            "title": "Sample title",
+            "children": "Sample content"
+          },
+          "image": "screenshots/Drawer/00-default.png",
+          "error": null
+        },
+        {
+          "name": "isOpen",
+          "props": {
+            "isOpen": true,
+            "onClose": "__fn__",
+            "title": "Sample title",
+            "children": "Sample content"
+          },
+          "image": "screenshots/Drawer/01-isopen.png",
+          "error": null
+        },
+        {
+          "name": "side: left",
+          "props": {
+            "isOpen": false,
+            "onClose": "__fn__",
+            "title": "Sample title",
+            "children": "Sample content",
+            "side": "left"
+          },
+          "image": "screenshots/Drawer/02-side-left.png",
+          "error": null
+        },
+        {
+          "name": "side: right",
+          "props": {
+            "isOpen": false,
+            "onClose": "__fn__",
+            "title": "Sample title",
+            "children": "Sample content",
+            "side": "right"
+          },
+          "image": "screenshots/Drawer/03-side-right.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Dropdown",
+      "exportName": "Dropdown",
+      "file": "src/components/containers.tsx",
+      "category": "containers",
+      "description": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "entries",
+          "type": "DropdownEntry[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "onOpenChange",
+          "type": "((open: boolean) => void) | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "label": "Sample content",
+            "entries": [
+              {
+                "label": "Sample label"
+              },
+              {
+                "label": "Sample label"
+              },
+              {
+                "label": "Sample label"
+              }
+            ]
+          },
+          "image": "screenshots/Dropdown/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Modal",
+      "exportName": "Modal",
+      "file": "src/components/containers.tsx",
+      "category": "containers",
+      "description": "",
+      "props": [
+        {
+          "name": "isOpen",
+          "type": "boolean",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "onClose",
+          "type": "() => void",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "footer",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "isOpen": false,
+            "onClose": "__fn__",
+            "title": "Sample title",
+            "children": "Sample content"
+          },
+          "image": "screenshots/Modal/00-default.png",
+          "error": null
+        },
+        {
+          "name": "isOpen",
+          "props": {
+            "isOpen": true,
+            "onClose": "__fn__",
+            "title": "Sample title",
+            "children": "Sample content"
+          },
+          "image": "screenshots/Modal/01-isopen.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "exportName": "Tooltip",
+      "file": "src/components/containers.tsx",
+      "category": "containers",
+      "description": "",
+      "props": [
+        {
+          "name": "content",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "children",
+          "type": "React.ReactElement<any, string | React.JSXElementConstructor<any>>",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "delay",
+          "type": "number | undefined",
+          "required": false,
+          "default": "200",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "content": "Sample text",
+            "children": "__el__"
+          },
+          "image": "screenshots/Tooltip/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Alert",
+      "exportName": "Alert",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "\"success\" | \"warning\" | \"info\" | \"error\" | undefined",
+          "required": false,
+          "default": "'info'",
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "description",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "actions",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "title": "Sample title",
+            "description": "Sample content"
+          },
+          "image": "screenshots/Alert/00-default.png",
+          "error": null
+        },
+        {
+          "name": "variant: success",
+          "props": {
+            "title": "Sample title",
+            "description": "Sample content",
+            "variant": "success"
+          },
+          "image": "screenshots/Alert/01-variant-success.png",
+          "error": null
+        },
+        {
+          "name": "variant: warning",
+          "props": {
+            "title": "Sample title",
+            "description": "Sample content",
+            "variant": "warning"
+          },
+          "image": "screenshots/Alert/02-variant-warning.png",
+          "error": null
+        },
+        {
+          "name": "variant: info",
+          "props": {
+            "title": "Sample title",
+            "description": "Sample content",
+            "variant": "info"
+          },
+          "image": "screenshots/Alert/03-variant-info.png",
+          "error": null
+        },
+        {
+          "name": "variant: error",
+          "props": {
+            "title": "Sample title",
+            "description": "Sample content",
+            "variant": "error"
+          },
+          "image": "screenshots/Alert/04-variant-error.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "exportName": "Badge",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "dot",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "children": "Sample content"
+          },
+          "image": "screenshots/Badge/00-default.png",
+          "error": null
+        },
+        {
+          "name": "dot",
+          "props": {
+            "children": "Sample content",
+            "dot": true
+          },
+          "image": "screenshots/Badge/01-dot.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "BadgeAnchor",
+      "exportName": "BadgeAnchor",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "Wraps an element with a notification badge (count or dot).",
+      "props": [
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "dot",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "count",
+          "type": "number | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "children": "Sample content"
+          },
+          "image": "screenshots/BadgeAnchor/00-default.png",
+          "error": null
+        },
+        {
+          "name": "dot",
+          "props": {
+            "children": "Sample content",
+            "dot": true
+          },
+          "image": "screenshots/BadgeAnchor/01-dot.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Progress",
+      "exportName": "Progress",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "number",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "max",
+          "type": "number | undefined",
+          "required": false,
+          "default": "100",
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Progress'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "value": 60
+          },
+          "image": "screenshots/Progress/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "exportName": "Skeleton",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "width",
+          "type": "string | number | undefined",
+          "required": false,
+          "default": "'100%'",
+          "doc": ""
+        },
+        {
+          "name": "height",
+          "type": "string | number | undefined",
+          "required": false,
+          "default": "'1rem'",
+          "doc": ""
+        },
+        {
+          "name": "circle",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "lines",
+          "type": "number | undefined",
+          "required": false,
+          "default": "1",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Skeleton/00-default.png",
+          "error": null
+        },
+        {
+          "name": "circle",
+          "props": {
+            "circle": true
+          },
+          "image": "screenshots/Skeleton/01-circle.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Spinner",
+      "exportName": "Spinner",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "\"sm\" | \"md\" | \"lg\" | undefined",
+          "required": false,
+          "default": "'md'",
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Loading'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Spinner/00-default.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "size": "sm"
+          },
+          "image": "screenshots/Spinner/01-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "size": "md"
+          },
+          "image": "screenshots/Spinner/02-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "size": "lg"
+          },
+          "image": "screenshots/Spinner/03-size-lg.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Steps",
+      "exportName": "Steps",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "steps",
+          "type": "string[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "current",
+          "type": "number",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "steps": [
+              "One",
+              "Two",
+              "Three"
+            ],
+            "current": 3
+          },
+          "image": "screenshots/Steps/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Tag",
+      "exportName": "Tag",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "selected",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "onClick",
+          "type": "(() => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "onRemove",
+          "type": "(() => void) | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "children": "Sample content"
+          },
+          "image": "screenshots/Tag/00-default.png",
+          "error": null
+        },
+        {
+          "name": "selected",
+          "props": {
+            "children": "Sample content",
+            "selected": true
+          },
+          "image": "screenshots/Tag/01-selected.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "ToastProvider",
+      "exportName": "ToastProvider",
+      "file": "src/components/feedback.tsx",
+      "category": "feedback",
+      "description": "",
+      "props": [
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "durationMs",
+          "type": "number | undefined",
+          "required": false,
+          "default": "3500",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "children": "Sample content"
+          },
+          "image": "screenshots/ToastProvider/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "exportName": "Button",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "as",
+          "type": "React.ElementType<any, keyof React.JSX.IntrinsicElements> | undefined",
+          "required": false,
+          "default": "'button'",
+          "doc": ""
+        },
+        {
+          "name": "href",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "variant",
+          "type": "\"solid\" | \"outline\" | \"ghost\" | \"dark\" | undefined",
+          "required": false,
+          "default": "'solid'",
+          "doc": ""
+        },
+        {
+          "name": "size",
+          "type": "Size | undefined",
+          "required": false,
+          "default": "'md'",
+          "doc": ""
+        },
+        {
+          "name": "loading",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "leftIcon",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "rightIcon",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "children": "Sample content"
+          },
+          "image": "screenshots/Button/00-default.png",
+          "error": null
+        },
+        {
+          "name": "variant: solid",
+          "props": {
+            "children": "Sample content",
+            "variant": "solid"
+          },
+          "image": "screenshots/Button/01-variant-solid.png",
+          "error": null
+        },
+        {
+          "name": "variant: outline",
+          "props": {
+            "children": "Sample content",
+            "variant": "outline"
+          },
+          "image": "screenshots/Button/02-variant-outline.png",
+          "error": null
+        },
+        {
+          "name": "variant: ghost",
+          "props": {
+            "children": "Sample content",
+            "variant": "ghost"
+          },
+          "image": "screenshots/Button/03-variant-ghost.png",
+          "error": null
+        },
+        {
+          "name": "variant: dark",
+          "props": {
+            "children": "Sample content",
+            "variant": "dark"
+          },
+          "image": "screenshots/Button/04-variant-dark.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "children": "Sample content",
+            "size": "sm"
+          },
+          "image": "screenshots/Button/05-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "children": "Sample content",
+            "size": "md"
+          },
+          "image": "screenshots/Button/06-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "children": "Sample content",
+            "size": "lg"
+          },
+          "image": "screenshots/Button/07-size-lg.png",
+          "error": null
+        },
+        {
+          "name": "loading",
+          "props": {
+            "children": "Sample content",
+            "loading": true
+          },
+          "image": "screenshots/Button/08-loading.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "exportName": "Checkbox",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "indeterminate",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "label": "Sample content"
+          },
+          "image": "screenshots/Checkbox/00-default.png",
+          "error": null
+        },
+        {
+          "name": "indeterminate",
+          "props": {
+            "label": "Sample content",
+            "indeterminate": true
+          },
+          "image": "screenshots/Checkbox/01-indeterminate.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "ComboBox",
+      "exportName": "ComboBox",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "options",
+          "type": "Option[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "value",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "((v: string) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "placeholder",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Select…'",
+          "doc": ""
+        },
+        {
+          "name": "searchable",
+          "type": "boolean | undefined",
+          "required": false,
+          "default": "true",
+          "doc": "false renders a button-style dropdown select instead of an editable combo."
+        },
+        {
+          "name": "size",
+          "type": "Size | undefined",
+          "required": false,
+          "default": "'md'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ]
+          },
+          "image": "screenshots/ComboBox/00-default.png",
+          "error": null
+        },
+        {
+          "name": "searchable",
+          "props": {
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "searchable": true
+          },
+          "image": "screenshots/ComboBox/01-searchable.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "size": "sm"
+          },
+          "image": "screenshots/ComboBox/02-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "size": "md"
+          },
+          "image": "screenshots/ComboBox/03-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "size": "lg"
+          },
+          "image": "screenshots/ComboBox/04-size-lg.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "DatePicker",
+      "exportName": "DatePicker",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "string | undefined",
+          "required": false,
+          "doc": "ISO date `YYYY-MM-DD`. In range mode, `value` is the start and `endValue` the end."
+        },
+        {
+          "name": "endValue",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "((start: string, end?: string) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "range",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "min",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "max",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "placeholder",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Select date'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/DatePicker/00-default.png",
+          "error": null
+        },
+        {
+          "name": "range",
+          "props": {
+            "range": true
+          },
+          "image": "screenshots/DatePicker/01-range.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Field",
+      "exportName": "Field",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "hint",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "error",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "htmlFor",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "label": "Sample label",
+            "children": "Sample content"
+          },
+          "image": "screenshots/Field/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "FileUploader",
+      "exportName": "FileUploader",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "accept",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "multiple",
+          "type": "boolean | undefined",
+          "required": false,
+          "default": "true",
+          "doc": ""
+        },
+        {
+          "name": "onFiles",
+          "type": "((files: File[]) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Drag and drop files here, or click to browse'",
+          "doc": ""
+        },
+        {
+          "name": "initialFiles",
+          "type": "{ name: string; size: number; }[] | undefined",
+          "required": false,
+          "default": "[]",
+          "doc": "Pre-populate the list (useful for mocks)."
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/FileUploader/00-default.png",
+          "error": null
+        },
+        {
+          "name": "multiple",
+          "props": {
+            "multiple": true
+          },
+          "image": "screenshots/FileUploader/01-multiple.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "exportName": "Input",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "Size | undefined",
+          "required": false,
+          "default": "'md'",
+          "doc": ""
+        },
+        {
+          "name": "invalid",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "leftAddon",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "rightAddon",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "describedBy",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Input/00-default.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "size": "sm"
+          },
+          "image": "screenshots/Input/01-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "size": "md"
+          },
+          "image": "screenshots/Input/02-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "size": "lg"
+          },
+          "image": "screenshots/Input/03-size-lg.png",
+          "error": null
+        },
+        {
+          "name": "invalid",
+          "props": {
+            "invalid": true
+          },
+          "image": "screenshots/Input/04-invalid.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "exportName": "Radio",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "value": "Sample text",
+            "label": "Sample content"
+          },
+          "image": "screenshots/Radio/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "RadioGroup",
+      "exportName": "RadioGroup",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "name",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "value",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "((v: string) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "orientation",
+          "type": "\"vertical\" | \"horizontal\" | undefined",
+          "required": false,
+          "default": "'vertical'",
+          "doc": ""
+        },
+        {
+          "name": "legend",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "name": "Sample text",
+            "children": "Sample content"
+          },
+          "image": "screenshots/RadioGroup/00-default.png",
+          "error": null
+        },
+        {
+          "name": "orientation: vertical",
+          "props": {
+            "name": "Sample text",
+            "children": "Sample content",
+            "orientation": "vertical"
+          },
+          "image": "screenshots/RadioGroup/01-orientation-vertical.png",
+          "error": null
+        },
+        {
+          "name": "orientation: horizontal",
+          "props": {
+            "name": "Sample text",
+            "children": "Sample content",
+            "orientation": "horizontal"
+          },
+          "image": "screenshots/RadioGroup/02-orientation-horizontal.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "SearchBar",
+      "exportName": "SearchBar",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "onSearch",
+          "type": "((q: string) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "placeholder",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Search…'",
+          "doc": ""
+        },
+        {
+          "name": "size",
+          "type": "Size | undefined",
+          "required": false,
+          "default": "'md'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/SearchBar/00-default.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "size": "sm"
+          },
+          "image": "screenshots/SearchBar/01-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "size": "md"
+          },
+          "image": "screenshots/SearchBar/02-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "size": "lg"
+          },
+          "image": "screenshots/SearchBar/03-size-lg.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Select",
+      "exportName": "Select",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "Size | undefined",
+          "required": false,
+          "default": "'md'",
+          "doc": ""
+        },
+        {
+          "name": "invalid",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "placeholder",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "options",
+          "type": "{ value: string; label: string; }[]",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "placeholder": "Sample text",
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ]
+          },
+          "image": "screenshots/Select/00-default.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "placeholder": "Sample text",
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "size": "sm"
+          },
+          "image": "screenshots/Select/01-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "placeholder": "Sample text",
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "size": "md"
+          },
+          "image": "screenshots/Select/02-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "placeholder": "Sample text",
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "size": "lg"
+          },
+          "image": "screenshots/Select/03-size-lg.png",
+          "error": null
+        },
+        {
+          "name": "invalid",
+          "props": {
+            "placeholder": "Sample text",
+            "options": [
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              },
+              {
+                "value": "Sample text",
+                "label": "Sample label"
+              }
+            ],
+            "invalid": true
+          },
+          "image": "screenshots/Select/04-invalid.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Slider",
+      "exportName": "Slider",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "min",
+          "type": "number | undefined",
+          "required": false,
+          "default": "0",
+          "doc": ""
+        },
+        {
+          "name": "max",
+          "type": "number | undefined",
+          "required": false,
+          "default": "100",
+          "doc": ""
+        },
+        {
+          "name": "step",
+          "type": "number | undefined",
+          "required": false,
+          "default": "1",
+          "doc": ""
+        },
+        {
+          "name": "value",
+          "type": "number | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "number | undefined",
+          "required": false,
+          "default": "50",
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "((v: number) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "format",
+          "type": "((v: number) => string) | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "label": "Sample label"
+          },
+          "image": "screenshots/Slider/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Stepper",
+      "exportName": "Stepper",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "value",
+          "type": "number | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "number | undefined",
+          "required": false,
+          "default": "0",
+          "doc": ""
+        },
+        {
+          "name": "min",
+          "type": "number | undefined",
+          "required": false,
+          "default": "-Infinity",
+          "doc": ""
+        },
+        {
+          "name": "max",
+          "type": "number | undefined",
+          "required": false,
+          "default": "Infinity",
+          "doc": ""
+        },
+        {
+          "name": "step",
+          "type": "number | undefined",
+          "required": false,
+          "default": "1",
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "((v: number) => void) | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Stepper/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Switch",
+      "exportName": "Switch",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "checked",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "defaultChecked",
+          "type": "boolean | undefined",
+          "required": false,
+          "default": "false",
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "((v: boolean) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "label",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "label": "Sample content"
+          },
+          "image": "screenshots/Switch/00-default.png",
+          "error": null
+        },
+        {
+          "name": "checked",
+          "props": {
+            "label": "Sample content",
+            "checked": true
+          },
+          "image": "screenshots/Switch/01-checked.png",
+          "error": null
+        },
+        {
+          "name": "defaultChecked",
+          "props": {
+            "label": "Sample content",
+            "defaultChecked": true
+          },
+          "image": "screenshots/Switch/02-defaultchecked.png",
+          "error": null
+        },
+        {
+          "name": "disabled",
+          "props": {
+            "label": "Sample content",
+            "disabled": true
+          },
+          "image": "screenshots/Switch/03-disabled.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Textarea",
+      "exportName": "Textarea",
+      "file": "src/components/forms.tsx",
+      "category": "forms",
+      "description": "",
+      "props": [
+        {
+          "name": "invalid",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "autoResize",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "describedBy",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Textarea/00-default.png",
+          "error": null
+        },
+        {
+          "name": "invalid",
+          "props": {
+            "invalid": true
+          },
+          "image": "screenshots/Textarea/01-invalid.png",
+          "error": null
+        },
+        {
+          "name": "autoResize",
+          "props": {
+            "autoResize": true
+          },
+          "image": "screenshots/Textarea/02-autoresize.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Box",
+      "exportName": "Box",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "as",
+          "type": "React.ElementType<any, keyof React.JSX.IntrinsicElements> | undefined",
+          "required": false,
+          "default": "'div'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Box/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "exportName": "Card",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "actions",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "children": "Sample content"
+          },
+          "image": "screenshots/Card/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Container",
+      "exportName": "Container",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "size",
+          "type": "\"sm\" | \"md\" | \"lg\" | \"xl\" | \"full\" | undefined",
+          "required": false,
+          "default": "'lg'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Container/00-default.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "size": "sm"
+          },
+          "image": "screenshots/Container/01-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "size": "md"
+          },
+          "image": "screenshots/Container/02-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "size": "lg"
+          },
+          "image": "screenshots/Container/03-size-lg.png",
+          "error": null
+        },
+        {
+          "name": "size: xl",
+          "props": {
+            "size": "xl"
+          },
+          "image": "screenshots/Container/04-size-xl.png",
+          "error": null
+        },
+        {
+          "name": "size: full",
+          "props": {
+            "size": "full"
+          },
+          "image": "screenshots/Container/05-size-full.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Grid",
+      "exportName": "Grid",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "cols",
+          "type": "number | undefined",
+          "required": false,
+          "default": "12",
+          "doc": ""
+        },
+        {
+          "name": "gap",
+          "type": "Gap | undefined",
+          "required": false,
+          "default": "4",
+          "doc": ""
+        },
+        {
+          "name": "align",
+          "type": "Property.AlignItems | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Grid/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "GridItem",
+      "exportName": "GridItem",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "colSpan",
+          "type": "number | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "rowSpan",
+          "type": "number | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/GridItem/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Heading",
+      "exportName": "Heading",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "as",
+          "type": "React.ElementType<any, keyof React.JSX.IntrinsicElements> | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "level",
+          "type": "1 | 2 | 3 | 4 | 5 | 6 | undefined",
+          "required": false,
+          "default": "2",
+          "doc": ""
+        },
+        {
+          "name": "size",
+          "type": "\"sm\" | \"md\" | \"lg\" | \"xs\" | \"xl\" | \"2xl\" | \"3xl\" | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "weight",
+          "type": "\"regular\" | \"medium\" | \"bold\" | undefined",
+          "required": false,
+          "default": "'bold'",
+          "doc": ""
+        },
+        {
+          "name": "align",
+          "type": "\"left\" | \"right\" | \"center\" | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Heading/00-default.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "size": "sm"
+          },
+          "image": "screenshots/Heading/01-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "size": "md"
+          },
+          "image": "screenshots/Heading/02-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "size": "lg"
+          },
+          "image": "screenshots/Heading/03-size-lg.png",
+          "error": null
+        },
+        {
+          "name": "size: xs",
+          "props": {
+            "size": "xs"
+          },
+          "image": "screenshots/Heading/04-size-xs.png",
+          "error": null
+        },
+        {
+          "name": "size: xl",
+          "props": {
+            "size": "xl"
+          },
+          "image": "screenshots/Heading/05-size-xl.png",
+          "error": null
+        },
+        {
+          "name": "size: 2xl",
+          "props": {
+            "size": "2xl"
+          },
+          "image": "screenshots/Heading/06-size-2xl.png",
+          "error": null
+        },
+        {
+          "name": "size: 3xl",
+          "props": {
+            "size": "3xl"
+          },
+          "image": "screenshots/Heading/07-size-3xl.png",
+          "error": null
+        },
+        {
+          "name": "weight: regular",
+          "props": {
+            "weight": "regular"
+          },
+          "image": "screenshots/Heading/08-weight-regular.png",
+          "error": null
+        },
+        {
+          "name": "weight: medium",
+          "props": {
+            "weight": "medium"
+          },
+          "image": "screenshots/Heading/09-weight-medium.png",
+          "error": null
+        },
+        {
+          "name": "weight: bold",
+          "props": {
+            "weight": "bold"
+          },
+          "image": "screenshots/Heading/10-weight-bold.png",
+          "error": null
+        },
+        {
+          "name": "align: left",
+          "props": {
+            "align": "left"
+          },
+          "image": "screenshots/Heading/11-align-left.png",
+          "error": null
+        },
+        {
+          "name": "align: right",
+          "props": {
+            "align": "right"
+          },
+          "image": "screenshots/Heading/12-align-right.png",
+          "error": null
+        },
+        {
+          "name": "align: center",
+          "props": {
+            "align": "center"
+          },
+          "image": "screenshots/Heading/13-align-center.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Stack",
+      "exportName": "Stack",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "gap",
+          "type": "Gap | undefined",
+          "required": false,
+          "default": "4",
+          "doc": ""
+        },
+        {
+          "name": "direction",
+          "type": "\"column\" | \"row\" | undefined",
+          "required": false,
+          "default": "'column'",
+          "doc": ""
+        },
+        {
+          "name": "align",
+          "type": "Property.AlignItems | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "justify",
+          "type": "Property.JustifyContent | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "wrap",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Stack/00-default.png",
+          "error": null
+        },
+        {
+          "name": "direction: column",
+          "props": {
+            "direction": "column"
+          },
+          "image": "screenshots/Stack/01-direction-column.png",
+          "error": null
+        },
+        {
+          "name": "direction: row",
+          "props": {
+            "direction": "row"
+          },
+          "image": "screenshots/Stack/02-direction-row.png",
+          "error": null
+        },
+        {
+          "name": "wrap",
+          "props": {
+            "wrap": true
+          },
+          "image": "screenshots/Stack/03-wrap.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "exportName": "Text",
+      "file": "src/components/layout.tsx",
+      "category": "layout",
+      "description": "",
+      "props": [
+        {
+          "name": "as",
+          "type": "React.ElementType<any, keyof React.JSX.IntrinsicElements> | undefined",
+          "required": false,
+          "default": "'p'",
+          "doc": ""
+        },
+        {
+          "name": "size",
+          "type": "\"sm\" | \"md\" | \"lg\" | \"xs\" | \"xl\" | undefined",
+          "required": false,
+          "default": "'md'",
+          "doc": ""
+        },
+        {
+          "name": "weight",
+          "type": "\"regular\" | \"medium\" | \"bold\" | undefined",
+          "required": false,
+          "default": "'regular'",
+          "doc": ""
+        },
+        {
+          "name": "align",
+          "type": "\"left\" | \"right\" | \"center\" | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "truncate",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "muted",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/Text/00-default.png",
+          "error": null
+        },
+        {
+          "name": "size: sm",
+          "props": {
+            "size": "sm"
+          },
+          "image": "screenshots/Text/01-size-sm.png",
+          "error": null
+        },
+        {
+          "name": "size: md",
+          "props": {
+            "size": "md"
+          },
+          "image": "screenshots/Text/02-size-md.png",
+          "error": null
+        },
+        {
+          "name": "size: lg",
+          "props": {
+            "size": "lg"
+          },
+          "image": "screenshots/Text/03-size-lg.png",
+          "error": null
+        },
+        {
+          "name": "size: xs",
+          "props": {
+            "size": "xs"
+          },
+          "image": "screenshots/Text/04-size-xs.png",
+          "error": null
+        },
+        {
+          "name": "size: xl",
+          "props": {
+            "size": "xl"
+          },
+          "image": "screenshots/Text/05-size-xl.png",
+          "error": null
+        },
+        {
+          "name": "weight: regular",
+          "props": {
+            "weight": "regular"
+          },
+          "image": "screenshots/Text/06-weight-regular.png",
+          "error": null
+        },
+        {
+          "name": "weight: medium",
+          "props": {
+            "weight": "medium"
+          },
+          "image": "screenshots/Text/07-weight-medium.png",
+          "error": null
+        },
+        {
+          "name": "weight: bold",
+          "props": {
+            "weight": "bold"
+          },
+          "image": "screenshots/Text/08-weight-bold.png",
+          "error": null
+        },
+        {
+          "name": "align: left",
+          "props": {
+            "align": "left"
+          },
+          "image": "screenshots/Text/09-align-left.png",
+          "error": null
+        },
+        {
+          "name": "align: right",
+          "props": {
+            "align": "right"
+          },
+          "image": "screenshots/Text/10-align-right.png",
+          "error": null
+        },
+        {
+          "name": "align: center",
+          "props": {
+            "align": "center"
+          },
+          "image": "screenshots/Text/11-align-center.png",
+          "error": null
+        },
+        {
+          "name": "truncate",
+          "props": {
+            "truncate": true
+          },
+          "image": "screenshots/Text/12-truncate.png",
+          "error": null
+        },
+        {
+          "name": "muted",
+          "props": {
+            "muted": true
+          },
+          "image": "screenshots/Text/13-muted.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Breadcrumbs",
+      "exportName": "Breadcrumbs",
+      "file": "src/components/navigation.tsx",
+      "category": "navigation",
+      "description": "",
+      "props": [
+        {
+          "name": "items",
+          "type": "{ label: string; href?: string; }[]",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "items": [
+              {
+                "label": "Sample label"
+              },
+              {
+                "label": "Sample label"
+              },
+              {
+                "label": "Sample label"
+              }
+            ]
+          },
+          "image": "screenshots/Breadcrumbs/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Footer",
+      "exportName": "Footer",
+      "file": "src/components/navigation.tsx",
+      "category": "navigation",
+      "description": "",
+      "props": [
+        {
+          "name": "columns",
+          "type": "{ title: string; links: NavLink[]; }[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "legal",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "columns": [
+              {
+                "title": "Sample title",
+                "links": [
+                  {},
+                  {},
+                  {}
+                ]
+              },
+              {
+                "title": "Sample title",
+                "links": [
+                  {},
+                  {},
+                  {}
+                ]
+              },
+              {
+                "title": "Sample title",
+                "links": [
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            ],
+            "legal": "Sample content"
+          },
+          "image": "screenshots/Footer/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Navbar",
+      "exportName": "Navbar",
+      "file": "src/components/navigation.tsx",
+      "category": "navigation",
+      "description": "",
+      "props": [
+        {
+          "name": "brand",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "links",
+          "type": "NavLink[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "actions",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "mega",
+          "type": "{ label: string; groups: MegaGroup[]; } | undefined",
+          "required": false,
+          "doc": "Optional megamenu rendered under the first link when hovered/clicked."
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "brand": "Sample text",
+            "links": [
+              {
+                "label": "Sample label",
+                "href": "#"
+              },
+              {
+                "label": "Sample label",
+                "href": "#"
+              },
+              {
+                "label": "Sample label",
+                "href": "#"
+              }
+            ]
+          },
+          "image": "screenshots/Navbar/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Pagination",
+      "exportName": "Pagination",
+      "file": "src/components/navigation.tsx",
+      "category": "navigation",
+      "description": "",
+      "props": [
+        {
+          "name": "page",
+          "type": "number",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "pageCount",
+          "type": "number",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "(p: number) => void",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "siblings",
+          "type": "number | undefined",
+          "required": false,
+          "default": "1",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "page": 3,
+            "pageCount": 3,
+            "onChange": "__fn__"
+          },
+          "image": "screenshots/Pagination/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "exportName": "Sidebar",
+      "file": "src/components/navigation.tsx",
+      "category": "navigation",
+      "description": "",
+      "props": [
+        {
+          "name": "sections",
+          "type": "{ title?: string; links: NavLink[]; }[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "footer",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "sections": [
+              {
+                "links": [
+                  {},
+                  {},
+                  {}
+                ]
+              },
+              {
+                "links": [
+                  {},
+                  {},
+                  {}
+                ]
+              },
+              {
+                "links": [
+                  {},
+                  {},
+                  {}
+                ]
+              }
+            ]
+          },
+          "image": "screenshots/Sidebar/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "exportName": "Tabs",
+      "file": "src/components/navigation.tsx",
+      "category": "navigation",
+      "description": "",
+      "props": [
+        {
+          "name": "items",
+          "type": "TabItem[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "value",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "defaultValue",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "onChange",
+          "type": "((id: string) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "orientation",
+          "type": "\"vertical\" | \"horizontal\" | undefined",
+          "required": false,
+          "default": "'horizontal'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "items": [
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              }
+            ]
+          },
+          "image": "screenshots/Tabs/00-default.png",
+          "error": null
+        },
+        {
+          "name": "orientation: vertical",
+          "props": {
+            "items": [
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              }
+            ],
+            "orientation": "vertical"
+          },
+          "image": "screenshots/Tabs/01-orientation-vertical.png",
+          "error": null
+        },
+        {
+          "name": "orientation: horizontal",
+          "props": {
+            "items": [
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              },
+              {
+                "id": "sample",
+                "label": "Sample label",
+                "content": "Sample content"
+              }
+            ],
+            "orientation": "horizontal"
+          },
+          "image": "screenshots/Tabs/02-orientation-horizontal.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Avatar",
+      "exportName": "Avatar",
+      "file": "src/components/sections.tsx",
+      "category": "sections",
+      "description": "",
+      "props": [
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "name": "Sample text"
+          },
+          "image": "screenshots/Avatar/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Feed",
+      "exportName": "Feed",
+      "file": "src/components/sections.tsx",
+      "category": "sections",
+      "description": "",
+      "props": [
+        {
+          "name": "items",
+          "type": "FeedItem[]",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "items": [
+              {
+                "id": "sample",
+                "author": "Sample text",
+                "time": "Sample text",
+                "body": "Sample text"
+              },
+              {
+                "id": "sample",
+                "author": "Sample text",
+                "time": "Sample text",
+                "body": "Sample text"
+              },
+              {
+                "id": "sample",
+                "author": "Sample text",
+                "time": "Sample text",
+                "body": "Sample text"
+              }
+            ]
+          },
+          "image": "screenshots/Feed/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "FormContainer",
+      "exportName": "FormContainer",
+      "file": "src/components/sections.tsx",
+      "category": "sections",
+      "description": "",
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "description",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "submitLabel",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Submit'",
+          "doc": ""
+        },
+        {
+          "name": "onSubmit",
+          "type": "((data: FormData) => void) | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "children",
+          "type": "React.ReactNode",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "title": "Sample title",
+            "description": "Sample text",
+            "children": "Sample content"
+          },
+          "image": "screenshots/FormContainer/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "exportName": "Hero",
+      "file": "src/components/sections.tsx",
+      "category": "sections",
+      "description": "",
+      "props": [
+        {
+          "name": "eyebrow",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "subtitle",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "primary",
+          "type": "{ label: string; href?: string; onClick?: () => void; }",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "secondary",
+          "type": "{ label: string; href?: string; onClick?: () => void; } | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "visual",
+          "type": "React.ReactNode",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "title": "Sample title",
+            "subtitle": "Sample subtitle",
+            "primary": {
+              "label": "Sample label"
+            }
+          },
+          "image": "screenshots/Hero/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "LogoStrip",
+      "exportName": "LogoStrip",
+      "file": "src/components/sections.tsx",
+      "category": "sections",
+      "description": "",
+      "props": [
+        {
+          "name": "names",
+          "type": "string[]",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "names": [
+              "One",
+              "Two",
+              "Three"
+            ]
+          },
+          "image": "screenshots/LogoStrip/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "Testimonial",
+      "exportName": "Testimonial",
+      "file": "src/components/sections.tsx",
+      "category": "sections",
+      "description": "",
+      "props": [
+        {
+          "name": "quote",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "author",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "required": true,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {
+            "quote": "Sample text",
+            "author": "Sample text",
+            "role": "Sample text"
+          },
+          "image": "screenshots/Testimonial/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "VideoPlayer",
+      "exportName": "VideoPlayer",
+      "file": "src/components/sections.tsx",
+      "category": "sections",
+      "description": "",
+      "props": [
+        {
+          "name": "src",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "poster",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "title",
+          "type": "string | undefined",
+          "required": false,
+          "default": "'Video'",
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "image": "screenshots/VideoPlayer/00-default.png",
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "DataTable",
+      "exportName": "DataTable",
+      "file": "src/components/table.tsx",
+      "category": "table",
+      "description": "",
+      "props": [
+        {
+          "name": "columns",
+          "type": "Column<T>[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "rows",
+          "type": "T[]",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "rowKey",
+          "type": "(row: T) => string | number",
+          "required": true,
+          "doc": ""
+        },
+        {
+          "name": "pageSize",
+          "type": "number | undefined",
+          "required": false,
+          "default": "8",
+          "doc": ""
+        },
+        {
+          "name": "searchable",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "selectable",
+          "type": "boolean | undefined",
+          "required": false,
+          "doc": ""
+        },
+        {
+          "name": "striped",
+          "type": "boolean | undefined",
+          "required": false,
+          "default": "true",
+          "doc": ""
+        },
+        {
+          "name": "caption",
+          "type": "string | undefined",
+          "required": false,
+          "doc": ""
+        }
+      ],
+      "variants": [
+        {
+          "name": "Default",
+          "props": {},
+          "code": "<DataTable columns={columns} rows={orders} rowKey={(r) => r.id} pageSize={5} />",
+          "image": "screenshots/DataTable/00-default.png",
+          "error": null
+        },
+        {
+          "name": "searchable",
+          "props": {},
+          "code": "<DataTable columns={columns} rows={orders} rowKey={(r) => r.id} searchable />",
+          "image": "screenshots/DataTable/01-searchable.png",
+          "error": null
+        },
+        {
+          "name": "selectable",
+          "props": {},
+          "code": "<DataTable columns={columns} rows={orders} rowKey={(r) => r.id} selectable />",
+          "image": "screenshots/DataTable/02-selectable.png",
+          "error": null
+        }
+      ]
+    }
+  ]
+}

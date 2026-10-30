@@ -19,8 +19,8 @@ jobs:
         with: { node-version: 20 }
       - run: npm ci || npm install
       - run: npx playwright install --with-deps chromium
-      - run: node src/cli.mjs "${{ inputs.repo }}" --out docs-out/library --examples "${{ inputs.examples }}"
+      - run: node src/cli.mjs "${{ inputs.repo }}" --examples "${{ inputs.examples }}"
       - uses: actions/upload-artifact@v4
         with:
           name: design-library
-          path: docs-out/library
+          path: output
